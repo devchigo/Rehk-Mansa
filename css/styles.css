@@ -36,8 +36,33 @@ body {
 .section {
     display: flex;
     flex-direction: row;
-    margin: 100px 150px 0px 150px;
-    /* overflow: hidden; */
+    /* rehk
+    
+        used margin over padding to space content inwards, as a result there was a down overflow
+        prefer padding over margin for spacing content 
+
+        use margin to shift content away, and padding to space content
+
+        so you have two elements close to each other, space them with margin
+
+        you have a box that needs some spacing maybe from parent or from its child
+
+        you can give the parent of the box padding... so here.. padding can goto body, so as to box section...
+        or give padding to section so as to box its children....
+    */
+    padding: 100px 150px;
+    padding-bottom: 0;
+    /* 
+        you had overflow hidden without specifying height... whenever you give overflow, specify dimensions youu want
+
+        by default width is often 100% or auto... always often auto
+        height is auto
+        auto here means, take as much as you need, similar to 100%,
+        100% references the parent.. as much height/width as of the parent you need
+        so if parent has no width or height set 100% of auto === auto
+    */
+    overflow: hidden;
+    height: 100vh;
 }
 .full-name {
     font-size: 63px;
@@ -103,8 +128,13 @@ body {
 /* Second Half */
 .second-half-section {
     width: 50%;
-    /* overflow: scroll; */
-    /* height: 100%; */
+    /* 
+        added scroll behavior of smooth... not needed though, now...
+        you have two problems... a scrollbar not positioned at position x
+    */
+    scroll-behavior: smooth;
+    overflow: auto;
+    height: 100%;
 }
 .top-section,
 .github,
