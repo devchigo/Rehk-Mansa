@@ -50,8 +50,14 @@ body {
         you can give the parent of the box padding... so here.. padding can goto body, so as to box section...
         or give padding to section so as to box its children....
     */
-    padding: 100px 150px;
-    padding-bottom: 0;
+
+    /* 
+        rehkmansa
+
+        removed padding here
+    
+    */
+
     /* 
         you had overflow hidden without specifying height... whenever you give overflow, specify dimensions youu want
 
@@ -64,6 +70,19 @@ body {
     overflow: hidden;
     height: 100vh;
 }
+
+.section > * {
+    padding-top: 150px;
+
+    /* 
+        rehkmansa
+        used a direct child selector with the wildcard (*) selector to say 
+        give all of them padding top of 150px... better than going to each of them to add it
+        less lines of codes
+    
+    */
+}
+
 .full-name {
     font-size: 63px;
     line-height: 63px;
@@ -81,6 +100,13 @@ body {
 .first-half-section {
     width: 50%;
     margin-right: 100px;
+    padding-left: 150px;
+
+    /* 
+        rehkmansa
+
+        added padding here---> left padding
+    */
 }
 
 .first-half-section__box {
@@ -128,6 +154,13 @@ body {
 /* Second Half */
 .second-half-section {
     width: 50%;
+    padding-right: 150px;
+
+    /* 
+        rehkmansa
+
+        added padding ---right
+    */
     /*  
     rehkmansa
         added scroll behavior of smooth... not needed though, now...
