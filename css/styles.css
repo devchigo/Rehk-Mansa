@@ -141,6 +141,9 @@ body {
     overflow: auto;
     height: 100%;
 }
+.second-half-section::-webkit-scrollbar {
+    display: none;
+}
 .top-section,
 .github,
 .live-projects {
@@ -212,4 +215,13 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+}
+
+.inspiration {
+    font-size: 14px;
+    line-height: 21px;
+    color: #949495;
+    font-weight: 400;
+    text-align: center;
+    margin: 45px;
 }
