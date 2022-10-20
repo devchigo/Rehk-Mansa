@@ -36,7 +36,7 @@ body {
 .section {
     display: flex;
     flex-direction: row;
-    /* rehk
+    /* rehkmansa
     
         used margin over padding to space content inwards, as a result there was a down overflow
         prefer padding over margin for spacing content 
@@ -128,9 +128,14 @@ body {
 /* Second Half */
 .second-half-section {
     width: 50%;
-    /* 
+    /*  
+    rehkmansa
         added scroll behavior of smooth... not needed though, now...
         you have two problems... a scrollbar not positioned at position x
+        you can hide the scrollbar... but naaaa
+
+
+        i'm creating a second branch... check it out
     */
     scroll-behavior: smooth;
     overflow: auto;
