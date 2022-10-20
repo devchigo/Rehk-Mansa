@@ -36,7 +36,8 @@ body {
 .section {
     display: flex;
     flex-direction: row;
-    margin: 100px;
+    margin: 100px 150px 0px 150px;
+    /* overflow: hidden; */
 }
 .full-name {
     font-size: 63px;
@@ -102,6 +103,8 @@ body {
 /* Second Half */
 .second-half-section {
     width: 50%;
+    /* overflow: scroll; */
+    /* height: 100%; */
 }
 .top-section,
 .github,
@@ -135,7 +138,7 @@ body {
     /* height: 100%; */
     /* position: absolute; */
     padding: 40px;
-    margin: 30px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 .language {
     font-size: 10px;
@@ -144,6 +147,7 @@ body {
     color: #f5f5fa;
     letter-spacing: 2px;
     margin: 10px 0px 10px 0;
+    text-transform: uppercase;
 }
 .project-name2 {
     font-size: 30px;
