@@ -101,7 +101,7 @@ body {
 .first-half-section {
     width: 45%;
     /* margin-right: 100px; */
-    padding-left: 5%;
+    /* padding-left: 5%; */
 
     /* 
         rehkmansa
@@ -156,7 +156,7 @@ body {
 .second-half-section {
     width: 55%;
     padding-right: 5%;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 
     /* 
         rehkmansa
@@ -257,8 +257,8 @@ body {
 
     .section > * {
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        /* padding-left: 5%; */
+        /* padding-right: 5%; */
         padding-top: 50px;
     }
 }
