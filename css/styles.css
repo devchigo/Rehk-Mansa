@@ -36,6 +36,7 @@ body {
 .section {
     display: flex;
     flex-direction: row;
+    gap: 50px;
     /* rehkmansa
     
         used margin over padding to space content inwards, as a result there was a down overflow
@@ -99,7 +100,7 @@ body {
 }
 .first-half-section {
     width: 50%;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     padding-left: 150px;
 
     /* 
