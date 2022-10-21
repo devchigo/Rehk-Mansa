@@ -88,9 +88,11 @@ body {
 }
 .flex1 {
     display: flex;
-    flex-direction: baseline;
+    flex-direction: row;
     gap: 10px;
+    margin: 10px;
 }
+
 .no1,
 .project-name {
     font-size: 15px;
@@ -224,4 +226,67 @@ body {
     font-weight: 400;
     text-align: center;
     margin: 45px;
+}
+
+@media screen and (max-width: 992px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 150px 0 50px 0;
+    }
+    .first-half-section {
+        margin: 0;
+        padding: 0;
+    }
+    .full-name,
+    .profile,
+    .who-i-am {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .first-half-section__box {
+        margin: 20px 0 0 0;
+    }
+    .socials {
+        margin: 30px 0 30px 0;
+        /* align-items: flex-end; */
+        justify-content: center;
+    }
+    .uil-arrow,
+    .github-projects {
+        font-size: 22px;
+    }
+    .uil-arrow-right {
+        font-size: 22px;
+    }
+    .project-name2 {
+        font-size: 28px;
+    }
+    .last-updated,
+    .created-at {
+        font-size: 22px;
+    }
+    .meta-github-h2,
+    .uil-code-branch {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        /* align-items: center; */
+        /* position: relative; */
+        /* padding: 150px 0 50px 0; */
+    }
+    .full-name {
+        text-align: left;
+    }
 }
